@@ -37,6 +37,7 @@ export default {
     msg: String
   },
   mounted(){
+    console.log('gtm')
     this.$gtm.trackEvent({
       event: null, // Event type [default = 'interaction'] (Optional)
       category: "PRUEBA",

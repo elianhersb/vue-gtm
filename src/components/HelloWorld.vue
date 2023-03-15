@@ -35,6 +35,16 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  mounted(){
+    this.$gtm.trackEvent({
+      event: null, // Event type [default = 'interaction'] (Optional)
+      category: "PRUEBA",
+      action: "click",
+      label: "pruebaVue",
+      value: 'vuegtm',
+      noninteraction: false, // Optional
+    });
   }
 }
 </script>

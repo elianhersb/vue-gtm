@@ -5,7 +5,7 @@ import VueGtm from '@gtm-support/vue2-gtm';
 Vue.config.productionTip = false
 
 Vue.use(VueGtm, {
-  id: "GTM-T9DQ9K8", 
+  id: "GTM-M6QCV4B", 
   defer: false, // defaults to false. Script can be set to `defer` to increase page-load-time at the cost of less accurate results (in case visitor leaves before script is loaded, which is unlikely but possible)
   enabled: true, // defaults to true. Plugin can be disabled by setting this to false for Ex: enabled: !!GDPR_Cookie (optional)
   debug: true, // Whether or not display console logs debugs (optional)

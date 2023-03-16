@@ -15,18 +15,13 @@ export default {
     msg: String
   },
   mounted(){
-    console.log('gtm - GA - 01')
-    this.$ga.page({
-      page: '/',
-      title: 'Home page',
-      location: window.location.href
-    });
+    console.log('gtm - GA - 03');
 
     this.$gtm.trackView("Home", "Dashboard");
   },
   methods:{
     onSetGTM(){
-      this.$ga.event('categoryTest', 'actionTest', 'labelTest', 123456);
+      this.$gtag.event('testGA', { method: 'Google' })
       this.$gtm.trackEvent({
         event: 'EventoPRUEBA', // Event type [default = 'interaction'] (Optional)
         category: "onSetGTM",

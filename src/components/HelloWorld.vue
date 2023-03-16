@@ -21,11 +21,12 @@ export default {
       title: 'Home page',
       location: window.location.href
     });
-    
+
     this.$gtm.trackView("Home", "Dashboard");
   },
   methods:{
     onSetGTM(){
+      this.$ga.event('categoryTest', 'actionTest', 'labelTest', 123456);
       this.$gtm.trackEvent({
         event: 'EventoPRUEBA', // Event type [default = 'interaction'] (Optional)
         category: "onSetGTM",

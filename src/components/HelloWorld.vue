@@ -16,12 +16,12 @@ export default {
   },
   mounted(){
     console.log('gtm01')
-    this.$gtm.trackView("MyScreenName", "currentPath");
+    this.$gtm.trackView("Home", "Dashboard");
   },
   methods:{
     onSetGTM(){
       this.$gtm.trackEvent({
-        event: null, // Event type [default = 'interaction'] (Optional)
+        event: 'EventoPRUEBA', // Event type [default = 'interaction'] (Optional)
         category: "onSetGTM",
         action: "click",
         label: "SetGTM",

@@ -15,7 +15,13 @@ export default {
     msg: String
   },
   mounted(){
-    console.log('gtm01')
+    console.log('gtm - GA - 01')
+    this.$ga.page({
+      page: '/',
+      title: 'Home page',
+      location: window.location.href
+    });
+    
     this.$gtm.trackView("Home", "Dashboard");
   },
   methods:{

@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import App from './App.vue'
 import VueGtm from '@gtm-support/vue2-gtm';
+import VueAnalytics from 'vue-analytics'
+
 
 Vue.config.productionTip = false
 
@@ -13,6 +15,10 @@ Vue.use(VueGtm, {
   ignoredViews: ["homepage"], // Don't trigger events for specified router names (case insensitive) (optional)
   trackOnNextTick: false, // Whether or not call trackView in Vue.nextTick
 });
+
+Vue.use(VueAnalytics, {
+  id: 'G-KKCVRSRG92'
+})
 
 new Vue({
   render: h => h(App),
